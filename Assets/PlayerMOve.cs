@@ -8,7 +8,7 @@ public class PlayerMOve : MonoBehaviour
 
     private void Start()
     {
-        this.transform.position = new Vector2(-14, -1);
+        this.transform.position = new Vector2(-21, -1);
     }
     // Start is called before the first frame update
    
@@ -25,7 +25,7 @@ public class PlayerMOve : MonoBehaviour
         {
             transform.Translate(new Vector2(-3.0f * Time.deltaTime, 0));
         }
-        if (transform.position.x < -4) is_right = false;
-        if (transform.position.x < 4) is_right = true;
+        if (transform.position.x < -5) is_right = false;
+        if (transform.position.x < 5) is_right = true;
     }
 }
