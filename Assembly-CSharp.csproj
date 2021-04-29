@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{492805A3-4234-B124-CBAA-94FED279C1B9}</ProjectGuid>
+    <ProjectGuid>{4ADEA2F0-2674-FFF9-7D7A-5B907818679D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,8 +56,8 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PlayerMOve.cs" />
     <Compile Include="Assets\Jump.cs" />
+    <Compile Include="Assets\PlayerMOve.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Jump : MonoBehaviour {
-
+   
     Rigidbody2D rb;
     public float speed;
     public float jumpPower;
     public int jumpCount = 2;
     //추가된 내용 점프 카운트
+
    
     void Start()
     {
@@ -31,7 +32,7 @@ public class Jump : MonoBehaviour {
 
          
             /*rb.velocity = new Vector3(0, 7, 0);*/
-            rb.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * jumpPower  , ForceMode2D.Impulse);
              jumpCount++;
             }
         }
