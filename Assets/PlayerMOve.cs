@@ -8,7 +8,7 @@ public class PlayerMOve : MonoBehaviour
 
     private void Start()
     {
-        this.transform.position = new Vector2(-26, 0);
+        this.transform.position = new Vector2(-6, -3);
     }
     
    

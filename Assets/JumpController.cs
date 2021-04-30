@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Jump : MonoBehaviour {
+public class JumpController : MonoBehaviour {
    
     Rigidbody2D rb;
     public float speed;
@@ -18,19 +18,13 @@ public class Jump : MonoBehaviour {
         //시작 기준
     }
 
-   
-
-    // Update is called once per frame
     private void Update()
     {
-        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if(jumpCount < 2)
               //점프를 2번할지 말지 if 문으로 입력
             {
-
-         
             /*rb.velocity = new Vector3(0, 7, 0);*/
             rb.AddForce(Vector2.up * jumpPower  , ForceMode2D.Impulse);
              jumpCount++;
