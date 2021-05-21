@@ -10,7 +10,7 @@ public class ChangeScene : MonoBehaviour
     {
         if (collision.gameObject.name == "Motorcycle")
         {
-            SceneManager.LoadScene("SecondScene");
+            SceneManager.LoadScene("ThirdScene");
         }
     }
     // Start is called before the first frame update

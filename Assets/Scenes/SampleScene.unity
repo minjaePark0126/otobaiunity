@@ -476,7 +476,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 03da4f6b55b6a0c4e88cd0eafb342c97, type: 2}
+  - {fileID: 2100000, guid: fdf7495edb2d9b64a87f1fada8f84703, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -544,7 +544,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1516,7 +1516,8 @@ MonoBehaviour:
   - {fileID: 1757409901}
   - {fileID: 690069059}
   - {fileID: 2027113786}
-  speed: 4.5
+  - {fileID: 786270578}
+  speed: 4
 --- !u!1 &1999176383
 GameObject:
   m_ObjectHideFlags: 0
