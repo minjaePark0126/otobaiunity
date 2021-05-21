@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChangeScene : MonoBehaviour
+public class ChangeScene1 : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
 
     {
         if (collision.gameObject.name == "Motorcycle")
         {
-            SceneManager.LoadScene("SecondScene");
+            SceneManager.LoadScene("ThirdScene");
         }
     }
     // Start is called before the first frame update
@@ -25,4 +25,3 @@ public class ChangeScene : MonoBehaviour
         
     }
 }
-
