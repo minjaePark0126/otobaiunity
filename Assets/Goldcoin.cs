@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Goldcoin : MonoBehaviour
 {
+   
     void OnTriggerEnter2D(Collider2D collision)
     {
         Score.coinAmount += 5;//5점씩 증가

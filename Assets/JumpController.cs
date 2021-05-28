@@ -7,7 +7,7 @@ public class JumpController : MonoBehaviour {
     Rigidbody2D rb;
     public float speed;
     public float jumpPower;
-    public int jumpCount = 2;
+    public int jumpCount = 3;
     //추가된 내용 점프 카운트
 
    
@@ -22,8 +22,8 @@ public class JumpController : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if(jumpCount < 2)
-              //점프를 2번할지 말지 if 문으로 입력
+            if(jumpCount < 3)
+              //점프를 3번할지 말지 if 문으로 입력
             {
             /*rb.velocity = new Vector3(0, 7, 0);*/
             rb.AddForce(Vector2.up * jumpPower  , ForceMode2D.Impulse);
