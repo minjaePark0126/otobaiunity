@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,13 +11,18 @@ public class GameManager : MonoBehaviour
     public GameObject Motorcycle;
     public AudioClip coinSound;
     private AudioSource audioSource;
-    public int score;
     public TextMesh finishScoreText;
     public TextMesh bestScroeText;
     public TextMesh scoreText;
     public GameObject finishWindow;
     public GameObject newImg;
+    
 
+    static public int score = 0;
+    static public int bestScore = 0;
+
+ 
+ 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -30,7 +36,7 @@ public class GameManager : MonoBehaviour
     //사운드 재생하는법
     void Update()
     {
-       
+        scoreText.text = score.ToString();
     }
 
     public void GameOver()

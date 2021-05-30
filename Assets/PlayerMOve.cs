@@ -27,5 +27,6 @@ public class PlayerMOve : MonoBehaviour
         }
         if (transform.position.x < -4) is_right = false;
         if (transform.position.x < 4) is_right = true;
+
     }
 }

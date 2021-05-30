@@ -20,6 +20,7 @@ public class JumpController : MonoBehaviour {
 
     private void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if(jumpCount < 3)
@@ -31,9 +32,11 @@ public class JumpController : MonoBehaviour {
             }
         }
 
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+       
         // 점프가 바닥?지형물에 부딪히면 카운트 초기화?
         jumpCount = 0;
     }
