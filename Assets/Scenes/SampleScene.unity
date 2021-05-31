@@ -4716,8 +4716,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177237021}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.5985, y: 2.5156, z: 1}
-  m_LocalScale: {x: 20.02662, y: 15.033235, z: 1.0047423}
+  m_LocalPosition: {x: -3.06, y: 4.5925, z: 1}
+  m_LocalScale: {x: 27.104029, y: 19.186916, z: 1.0047423}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -4758,7 +4758,7 @@ MonoBehaviour:
   coinSound: {fileID: 8300000, guid: 11b6143b2b94d004e866e5d614033b91, type: 3}
   finishScoreText: {fileID: 579274416}
   bestScroeText: {fileID: 939771304}
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1391749970}
   finishWindow: {fileID: 63276515}
   newImg: {fileID: 525317392}
 --- !u!4 &1236153869

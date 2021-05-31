@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     Text text;
+    public int score;
     public static int coinAmount;
 
     // Start is called before the first frame update
     void Start()
     {
+        score = 0;
         text = GetComponent<Text>();
     }
 

@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     private AudioSource audioSource;
     public TextMesh finishScoreText;
     public TextMesh bestScroeText;
-    public TextMesh scoreText;
+    public Text scoreText;
     public GameObject finishWindow;
     public GameObject newImg;
     

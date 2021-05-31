@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class FinishManager : MonoBehaviour
 {
-    public Text Score;
-    public Text BestScore;
+    public TextMesh Score;
+    public TextMesh BestScore;
 
     public GameObject newImage;
     private string text;
@@ -31,8 +31,12 @@ public class FinishManager : MonoBehaviour
     //첫화면 로드, 점수 초기화
     public void PlayBtn()
     {
-        GameManager.score = 0;
-        SceneManager.LoadScene("SampleScene");
+        
+        void OnMouseDown()
+        {
+            GameManager.score = 0;
+            SceneManager.LoadScene("SampleScene");
+        }
     }
     void Start()
     {

@@ -5,11 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene0 : MonoBehaviour
 {
-    private void Update()
+    private void OnMouseDown()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            SceneManager.LoadScene("SampleScene");
-        }
+        SceneManager.LoadScene("SampleScene");
+        GameManager.score = 0;
     }
 }

@@ -10,7 +10,7 @@ public class Hurttouch : MonoBehaviour
     {
         if (collision.gameObject.name == "Motorcycle")//Motorcycleø° ¥Í¿∏∏È
         {
-            SceneManager.LoadScene("SampleScene");//SampleScene¿∏∑Œ ª–
+            SceneManager.LoadScene("EndScene");//EndScene¿∏∑Œ ª–
         }
     }
     // Start is called before the first frame update
