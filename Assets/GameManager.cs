@@ -44,9 +44,9 @@ public class GameManager : MonoBehaviour
         if (end) return;
         //게임종료 시 실행할 명령은 여기로!
         end = true;
-        CancelInvoke("MakeCactus");
-        iTween.ShakePosition(Camera.main.gameObject,
-        iTween.Hash("x", 0.2, "y", 0.2, "time", 0.5f));
+        //CancelInvoke("MakeCactus");
+        //iTween.ShakePosition(Camera.main.gameObject,
+        //iTween.Hash("x", 0.2, "y", 0.2, "time", 0.5f));
         iTween.MoveTo(finishWindow, iTween.Hash("y", 1, "delay", 1.3f, "time", 0.5f));
         //베스트 스코어 vs 현재 스코어가 더 크면 최고 점수는 베스트 스코어라는 점수의 스코어라는 점수를 저장해주세요
         if (score > PlayerPrefs.GetInt("BestScore"))
