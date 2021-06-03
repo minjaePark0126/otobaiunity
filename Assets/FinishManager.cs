@@ -44,7 +44,7 @@ public class FinishManager : MonoBehaviour
 
             finishScoreObj.text = finishScore.ToString();
 
-            Debug.Log("finishScore :: " + finishScore);
+            Debug.Log(finishScore);
 
         }
         /*if (score > PlayerPrefs.GetInt("bestScore"))
@@ -68,11 +68,11 @@ public class FinishManager : MonoBehaviour
 
         bestScoreObj.text = bestScore.ToString();
 
-        Debug.Log("bestScore :: " + bestScore);
+        Debug.Log(bestScore);
 
 
 
-        PlayerPrefs.SetInt("finishScore", bestScore);  //highScore라는 키값에 newScore 값 지정하기.
+        PlayerPrefs.SetInt("finishScore", bestScore);  //finishScore라는 키값에 bestScore 값 지정하기.
 
         PlayerPrefs.Save();                                   //지정한 데이터 저장하기.
 
