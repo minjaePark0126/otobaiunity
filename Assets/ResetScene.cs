@@ -5,8 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class ResetScene : MonoBehaviour
 {
+
+    public int score;
+
+    public void Restart()
+    {
+        Time.timeScale = 1;
+
+    }
+    void Start()
+    {
+    }
     private void OnMouseDown()
     {
-        SceneManager.LoadScene(0);
+        
+        SceneManager.LoadScene("SampleScene");
     }
+    
 }

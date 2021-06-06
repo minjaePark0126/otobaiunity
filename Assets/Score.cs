@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        score = 0;
+        score = 0;//점수 0으로 초기화
         text = GetComponent<Text>();
     }
 
@@ -20,5 +21,7 @@ public class Score : MonoBehaviour
     void Update()
     {
         text.text = coinAmount.ToString();
+
+        
     }
 }
