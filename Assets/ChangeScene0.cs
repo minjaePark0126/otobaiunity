@@ -10,6 +10,10 @@ public class ChangeScene0 : MonoBehaviour
     private void OnMouseDown()
     {
         SceneManager.LoadScene("SampleScene");
+<<<<<<< .merge_file_a17952
         score = 0;
+=======
+        
+>>>>>>> .merge_file_a17984
     }
 }

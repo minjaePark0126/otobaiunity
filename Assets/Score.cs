@@ -15,6 +15,9 @@ public class Score : MonoBehaviour
     {
         score = 0;//점수 0으로 초기화
         text = GetComponent<Text>();
+        if (!PlayerPrefs.HasKey("score"))
+            PlayerPrefs.SetInt("score", 0);
+        
     }
 
     // Update is called once per frame

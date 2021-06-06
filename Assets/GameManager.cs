@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+<<<<<<< .merge_file_a07148
     public Text text;//점수를 표시하는 Text를 text에서 받아온다
     public static int score;
     public static int coinAmount;
@@ -37,5 +38,41 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("SampleScene");
+=======
+    Text text;
+    public int score;
+    public static int coinAmount;
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Score.coinAmount += 5;//5점씩 증가
+        Destroy(gameObject);//동전아 사라져랏!
+        Sound.SoundPlay();
+
+        if (collision.gameObject.tag == "Co")//코인들한테 Co태그 줬거든요
+        {
+            collision.gameObject.SetActive(false);
+        }
+
+
+        // Start is called before the first frame update
+        void Start()
+        {
+            score = 0;
+            text = GetComponent<Text>();
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            text.text = coinAmount.ToString();
+        }
+
+
+
+
+
+
+
+>>>>>>> .merge_file_a10420
     }
 }

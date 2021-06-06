@@ -18,7 +18,10 @@ public class ResetScene : MonoBehaviour
     }
     private void OnMouseDown()
     {
+<<<<<<< .merge_file_a08144
         
+=======
+>>>>>>> .merge_file_a12824
         SceneManager.LoadScene("SampleScene");
     }
     
