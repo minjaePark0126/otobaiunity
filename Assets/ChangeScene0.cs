@@ -8,6 +8,6 @@ public class ChangeScene0 : MonoBehaviour
     private void OnMouseDown()
     {
         SceneManager.LoadScene("SampleScene");
-        GameManager.score = 0;
+        
     }
 }

@@ -7,6 +7,6 @@ public class ResetScene : MonoBehaviour
 {
     private void OnMouseDown()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("SampleScene");
     }
 }

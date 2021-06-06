@@ -14,6 +14,9 @@ public class Score : MonoBehaviour
     {
         score = 0;
         text = GetComponent<Text>();
+        if (!PlayerPrefs.HasKey("score"))
+            PlayerPrefs.SetInt("score", 0);
+        
     }
 
     // Update is called once per frame

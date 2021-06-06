@@ -64,7 +64,7 @@ public class FinishManager : MonoBehaviour
     
     //새로운 점수 판에 랜덤 값 주기
 
-    bestScore = Random.Range(1, 10);
+    bestScore = Score.coinAmount;
 
         bestScoreObj.text = bestScore.ToString();
 
